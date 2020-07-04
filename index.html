@@ -1,0 +1,301 @@
+<html>
+    <head>
+        <title>
+            
+            Corona Tracker
+        </title>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-sm  bg-primary fixed-top">
+            <div class="container">
+                <button class="navbar-toggler"  type="button"      data-toggle="collapse" data-target="#navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id=navbar>
+                    <a class="navbar-brand">Corona Tracker</a>
+                    <ul class="navbar-nav ml-auto"> 
+                        <li class="nav-item "><a class="nav-link" href="#Symptoms">Symptoms</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Prevention">Prevention</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Treatment"> Treatment</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact"> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+        </nav>
+
+
+
+
+
+
+        <header class="jumbotron bg-primary" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12  col-sm-6 col-lg-12">
+                        <h1>Corona virus (COVID-19)</h1>
+                        <p>
+                            Coronaviruses are a large family of viruses which may cause illness in animals or humans.  In humans, several coronaviruses are known to cause respiratory infections ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS). The most recently discovered coronavirus causes coronavirus disease COVID-19.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="container" id="Symptoms">
+            <div class="row-header">
+                <h1>Symptoms</h1>
+            </div>
+            <div class="row row-content">
+                <div>
+                    
+                    <p>Signs and symptoms of coronavirus disease 2019 (COVID-19) may appear two to 14 days after exposure. This time after exposure and before having symptoms is called the incubation period. Common signs and symptoms can include:</p>
+                    <ul>
+                        <li>Fever</li>
+                        <li>Cough</li>
+                        <li>Tiredness</li>
+                    </ul>
+                    <p>Other symptoms can include:</p>
+                    <ul>
+                        <li>Shortness of breath or difficulty breathing</li>
+                        <li>Muscle aches</li>
+                        <li>Chills </li>
+                        <li>Sore throat</li>
+                        <li>Runny nose</li>
+                        <li>Headache</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <h1 class="row-header">Coronavirus Live Data</h1>
+                <br><br>
+                <div>
+                    <h1 class=" row-header text-center">World Wide</h1>
+                </div>
+                
+                <br><br>
+                <div class="row-content table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Newconfirmed</th>
+                            <th scope="col">NewDeaths</th>
+                            <th scope="col">NewRecovered</th>
+                            <th scope="col">TotalConfirmed</th>
+                            <th scope="col">TotalDeaths</th>
+                            <th scope="col">TotalRecovered</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="data">
+
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <button onclick="refresh()"  class="btn btn-danger btn-block">  
+                        Refresh
+                    </button>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="container">
+            <div>
+            
+                
+                <h1 class=" row-header text-center">INDIA</h1>
+                <br><br>
+                <div class="row-content table-responsive">
+                    <table class="table">
+                        <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Newconfirmed</th>
+                            <th scope="col">NewDeaths</th>
+                            <th scope="col">NewRecovered</th>
+                            <th scope="col">TotalConfirmed</th>
+                            <th scope="col">TotalDeaths</th>
+                            <th scope="col">TotalRecovered</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr id="india">
+
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br><br>
+                    <button onclick="refresh()"  class="btn btn-danger btn-block">  
+                        Refresh
+                    </button>
+                </div>
+            </div>
+            <br> <br>
+            
+        </div>
+        
+
+        <div class="container" id="Prevention">
+            <div class="row row-header">
+                <h1>Prevention</h1>
+            </div>
+            <div class="row row-content">
+                <ul>
+                    <li>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+                    <li>Maintain a safe distance from anyone who is coughing or sneezing.</li>
+                    <li>Wear a mask when physical distancing is not possible.</li>
+                    <li>Don’t touch your eyes, nose or mouth.</li>
+                    <li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+                    <li>Stay home if you feel unwell.</li>
+                    <li>If you have a fever, cough and difficulty breathing, seek medical attention.</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="container" id="Treatment">
+            <div class="row row-header">
+                <h1>Treatment</h1>
+                <br><br>
+            </div>
+            
+            <div class="row row-header">
+                <h3>Home remedies</h3>
+            </div>
+            <div class="row row-content">
+                <ul>
+                    <li><p>If you feel unhealthy, take a rest and eat plenty of liquid and nutritious foods. Use a separate bath and toilet if possible while staying in a separate room away from your family members. Clean and sterilize areas with excessive touch.</p></li>
+                    <li><p>Everyone at home should adopt a healthy lifestyle. Maintain a healthy diet, get enough sleep, stay active, and communicate with like-minded people over the phone or the Internet. Children need extra care and attention during these difficult times. As long as possible, keep up with regular habits with time.</p></li>
+                    <li><p>It is normal to feel sad, depressed or confused in such times of crisis. Talking to trusted friends and family members can be helpful. If the condition persists, talk to medical personnel or psychiatrists.
+                    </p></li>
+                </ul>
+            </div>
+            <div  class="row col-auto row-header">
+                <h3>Medical treatments</h3>
+            </div>
+            <div class="row-content">
+                <ul>
+                    <li><p>If you are in solid physical health, you can isolate yourself even if you have mild symptoms and call a medical care provider or COVID-19 Information Center.</p></li>
+
+                    <li><p>Seek medical help if you have fever, coughing, or difficulty breathing. Call in advance and let them know your situation.</p></li>
+                </ul>
+            </div>
+
+        </div>
+       
+        <footer class="footer" id="contact">
+            <div class="container">
+                <div class="row">             
+                    <div class="col-4 offset-1 col-sm-2">
+                        <h5>Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#Symptoms">Symptoms</a></li>
+                            <li><a href="#Prevention">Prevention</a></li>
+                            <li><a href="#Treatment">Treatment</a></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-12 col-sm-4">
+
+                        <div>
+                            <h5>Follow Us:</h5>
+                            <div >
+                                
+                                <a href="www.google.com" class="fa fa-google"></a>
+                                <a href="https://www.linkedin.com/in/mohan-i-70896a1a0/" class="fa fa-linkedin"></a>
+                                <a href="https://www.instagram.com/mohan_evin/" class="fa fa-instagram"></a>
+                                <a href="https://www.snapchat.com/add/mohanevin" class="fa fa-snapchat-ghost"></a>
+
+                                  
+                            </div>
+        
+                        </div>
+                    </div>
+               </div>
+               <div class="col-auto text-center">             
+                    <div>
+                        <p>© Copyright 2020 mohan-evin</p>
+                    </div>
+               </div>
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script>
+            
+                init()
+
+
+
+
+                function init(){
+                    var url="https://api.covid19api.com/summary"
+                    var data=""
+                    var india=""
+
+                    $.get(url,function(data){
+                        
+                        data=`
+                        <td>${data.Global.NewConfirmed}</td>
+                        <td>${data.Global.NewDeaths}</td>
+                        <td>${data.Global.NewRecovered}</td>
+                        <td>${data.Global.TotalConfirmed}</td>
+                        <td>${data.Global.TotalDeaths}</td>
+                        <td>${data.Global.TotalRecovered}</td>
+                        `
+                        
+                        
+                        $("#data").html(data)
+                        
+
+                    })
+                    $.get(url,function(india){
+                        console.log(india.Countries[76])
+                        india=`
+                        <td>${india.Countries[76].NewConfirmed}</td>
+                        <td>${india.Countries[76].NewDeaths}</td>
+                        <td>${india.Countries[76].NewRecovered}</td>
+                        <td>${india.Countries[76].TotalConfirmed}</td>
+                        <td>${india.Countries[76].TotalDeaths}</td>
+                        <td>${india.Countries[76].TotalRecovered}</td>
+                        `
+                        
+                        
+                        $("#india").html(india)
+                        
+
+                    })
+                    
+                }
+
+
+                function refresh(){
+                    cleardata();
+                    init()
+                }
+                function cleardata(){
+                    $("#data").empty()
+                    $("#india").empty()
+                }
+    
+        </script>
+    </body>
+
+</htm>
